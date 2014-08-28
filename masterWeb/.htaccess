@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^css/(.+)$ css/$1 [L]
+RewriteRule ^.+/css/(.+)$ css/$1 [L]
+
+RewriteRule ^js/(.+)$ js/$1 [L]
+RewriteRule ^.+/js/(.+)$ js/$1 [L]
+
+RewriteRule ^image/(.+)$ image/$1 [L]
+RewriteRule ^.+/image/(.+)$ image/$1 [L]
+
+RewriteRule ([A-Za-z-0-9]+/) ?page=$1 [L]
